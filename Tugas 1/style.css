@@ -1,0 +1,27 @@
+.text-header {
+    text-align: center;
+    color: #6b4434;
+    font-family: 'lucia sans';
+}
+.text-h3{
+    text-align: center;
+    color:#4d432f;
+}
+
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    color: #070808;
+    border: 1px;
+    margin:auto;
+}
+.table,th,td{
+    text-align: center;
+    border: 1px solid #6b0032;
+    padding: 8px 20px;
+    
+}
+body{
+    background-color: #fce9b8 ;
+}

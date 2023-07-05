@@ -1,0 +1,30 @@
+.text-header {
+    text-align: center;
+    color: #00a6ff;
+    font-family: 'lucia sans';
+}
+
+.text-h3 {
+    text-align: center;
+    color: rgb(9, 98, 241);
+}
+
+.text-h4{
+    text-align: center;
+    color:blueviolet;
+}
+
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    color: rgb(204, 142, 28);
+    border: 1px;
+    margin:auto;
+}
+
+.table,th,td{
+    text-align: center;
+    border: 1px solid #6b0032;
+    padding: 8px 20px;
+}
