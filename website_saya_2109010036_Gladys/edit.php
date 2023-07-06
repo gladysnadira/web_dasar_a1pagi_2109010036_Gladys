@@ -59,23 +59,23 @@ if (buku_satu_jumlah($id_buku)< 1) {
         <th>Penulis</th>
         <td>:</td>
         <td>
-            <input name="penulis" type="text" placeholder= "Input Penulis" 
-            value="<?= buku_satu($id_buku, "penulis");?>">
+            <input name="Penulis" type="text" placeholder= "Input Penulis" 
+            value="<?= buku_satu($id_buku, "Penulis");?>">
         </td>
     </tr>
     <tr>
         <th>Penerbit</th>
         <td>:</td>
         <td>
-            <input name="penerbit" type="text" placeholder= "Input penerbit" 
-            value="<?= buku_satu($id_buku, "penerbit");?>">
+            <input name="Penerbit" type="text" placeholder= "Input penerbit" 
+            value="<?= buku_satu($id_buku, "Penerbit");?>">
         </td>
     </tr>
     <tr>
         <td></td>
         <td></td>
         <td>
-            <button type="submit" name="edit_buku" style="width: 22%; ">Edit</button>
+            <button type="submit" name="edit_buku" style="width: 30%; ">Edit</button>
         </td>
     </tr>
 </table>
@@ -86,8 +86,9 @@ $tanggal = date("Y-m-d H:i:s");
 if (isset($_POST["edit_buku"])) {
     $judul_buku = $_POST["judul_buku"];
     $tahun_terbit = $_POST["tahun_terbit"];
-    $penulis = $_POST["penulis"];
-    $penerbit = $_POST["penerbit"];
+    $penulis = $_POST["Penulis"];
+    $penerbit = $_POST["Penerbit"];
+    $tanggal = date("Y-m-d H:i:s");
     if ($judul_buku == "" || $tahun_terbit == "" || $penulis == "" || $penerbit == "") {
         echo "
         <script>
@@ -100,7 +101,7 @@ if (isset($_POST["edit_buku"])) {
         tahun_terbit = '$tahun_terbit' , 
         penulis = '$penulis' , 
         penerbit = '$penerbit',
-        edit = '$tanggal'
+        Edit = '$tanggal'
         WHERE
         id = '$id_buku'");
         if ($edit) {

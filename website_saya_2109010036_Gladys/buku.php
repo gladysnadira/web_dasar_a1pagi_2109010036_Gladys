@@ -46,7 +46,7 @@ require "controllers/functions.php";
                 <td><?= $b["Tahun_terbit"]; ?></td>
                 <td><?= $b["Penulis"]; ?></td>
                 <td><?= $b["Penerbit"]; ?></td>
-                <td><?= date("d F Y, H:i", strtotime (@$b["edit"]));?></td>
+                <td><?= date("d F Y, H:i", strtotime (@$b["Edit"]));?></td>
                 <td>
                     <a href="edit.php?id=<?= $b["id"];?>">Edit</a>
                     <a href="hapus.php?id=<?= $b["id"];?>">Hapus</a>
