@@ -36,6 +36,8 @@ function buku_satu($id, $isi_buku)
 
 function buku_satu_jumlah($id)
 {
-    return mysqli_num_rows(q("SELECT * FROM buku WHERE id = '$id'"));
+    return mysqli_num_rows(
+        q("SELECT * FROM buku WHERE id = '$id'"));
 }
 ?>
+
