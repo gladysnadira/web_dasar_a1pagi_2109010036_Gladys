@@ -49,13 +49,20 @@ require "controllers/functions.php";
                 <td><?= date("d F Y, H:i", strtotime (@$b["Edit"]));?></td>
                 <td>
                     <a href="edit.php?id=<?= $b["id"];?>">Edit</a>
-                    <a href="hapus.php?id=<?= $b["id"];?>">Hapus</a>
+                    <a href="javascript:hapus('hapus.php?id=<?= $b["id"];?>')">Hapus</a>
                 </td>
             </tr>
         <?php endforeach;
         ?>
     </table>
-    <!-- <script src="controllers/javascript.js"></script> -->
+    <script>
+        function hapus(url)
+        {
+            if (confirm("Apakah data berikut akan di hapus?")) {
+                document.location = url 
+            }
+        }
+    </script>
 
 
 

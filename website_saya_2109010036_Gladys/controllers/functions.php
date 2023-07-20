@@ -6,7 +6,7 @@ function koneksi(){
     $username = "root";
     $password ="";
     //sesuaikan databasenya dengan yang di server
-    $database = "Web_dasar_a1_gladys_2109010036";
+    $database = "web_dasar_a1_gladys_2109010036";
     return mysqli_connect(
         // variabelnya harus seusai urutan di function koneksi
         $server,
@@ -38,6 +38,25 @@ function buku_satu_jumlah($id)
 {
     return mysqli_num_rows(
         q("SELECT * FROM buku WHERE id = '$id'"));
+}
+
+function user_satu_jumlah($username)
+{
+    return mysqli_num_rows(
+        q(
+            "SELECT * FROM user WHERE username = '$username'"
+        )
+    );
+}
+
+function user_satu($username,$isi_table)
+{
+    $x = mysqli_fetch_assoc(
+        q(
+            "SELECT * FROM user WHERE username = '$username'"
+        )
+        );
+        return $x[$isi_table];
 }
 ?>
 

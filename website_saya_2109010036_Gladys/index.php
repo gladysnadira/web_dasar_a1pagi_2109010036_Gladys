@@ -10,6 +10,9 @@
     <h1>Selamat Datang di Website Saya</h1>
     <hr>
     <ul>
+        <a href="login.php">
+            <li>Login dek</li>
+        </a>
         <a href="buku.php">
             <li>Data Buku</li>
         </a>
