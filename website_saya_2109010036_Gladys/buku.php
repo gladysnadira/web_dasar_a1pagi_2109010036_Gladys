@@ -12,19 +12,25 @@ require "controllers/functions.php";
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-    <h1>Selamat Datang di Halaman Buku</h1>
+<body class= tambah>
+    <center>
+    <h1>Daftar Buku</h1>
+    </center>
     <hr>
     <ul>
-        <a href="index.php">
-            <li>Home</li>
-        </a>
-        <a href="pinjam.php">
-            <li>Pinjam Buku</li>
-        </a>
+        <button>
+            <a href="login.php">
+                Home
+            </a>
+        </button>
+        <button>
+            <a href="pinjam.php">
+                Pinjam Buku
+            </a>
+        </button>
     </ul>
-    <hr>
     <a href="tambah_buku.php">Tambah Buku</a>
+    <center>
     <table border="1">
         <tr>
             <th>NO</th>
@@ -55,6 +61,7 @@ require "controllers/functions.php";
         <?php endforeach;
         ?>
     </table>
+    </center>
     <script>
         function hapus(url)
         {

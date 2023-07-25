@@ -2,3 +2,55 @@ table {
     border-collapse: collapse;
     width: 70%;
 }
+
+.login {
+    margin: 100px auto;
+    width: 400px;
+    padding: 10px;
+    border: 6px solid #ccc;
+    border-color: bisque;
+    background: lightblue;
+}
+
+.text-header {
+    text-align: center;
+}
+
+.desain {
+    text-align: center;
+}
+
+.btn1 {
+    font-size: medium;
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(131, 229, 229);
+}
+
+.btn2 {
+    font-size: medium;
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(131, 229, 229);
+}
+
+.btn3 {
+    font-size: medium;
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(131, 229, 229);
+}
+
+.pinjam {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100 %;
+    background-color: pink`;
+}
+
+.tambah {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100 %;
+    background-color: pink;
+}

@@ -12,7 +12,9 @@
 
 </head>
 <body>
-    <h1>Selamat Datang di Halaman Tambah Buku</h1>
+    <center>
+    <h1>Halaman Tambah Buku</h1>
+    </center>
     <hr>
     <ul>
         <a href="buku.php">
@@ -22,7 +24,6 @@
             <li>Pinjam Buku</li>
         </a>
     </ul>
-    <hr>
     <form action="" method="post">
         <table>
             <tr>

@@ -58,5 +58,29 @@ function user_satu($username,$isi_table)
         );
         return $x[$isi_table];
 }
+
+function pinjam()
+{
+    return q("SELECT * FROM `pinjam`");
+}
+
+function pinjam_satu_jumlah($id_peminjam) 
+{
+    return mysqli_num_rows(
+        q(
+            "SELECT * FROM 'pinjam' WHERE username = '$username'"
+        )
+        );
+}
+
+function pinjam_satu($username,$isi_table)
+{
+    $x = mysqli_fetch_assoc(
+        q(
+            "SELECT * FROM 'pinjam' WHERE username = '$username'"
+        )
+        );
+        return $x[$isi_table];
+}
 ?>
 
