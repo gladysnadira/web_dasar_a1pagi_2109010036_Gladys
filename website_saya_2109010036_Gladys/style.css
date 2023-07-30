@@ -41,16 +41,34 @@ table {
     background-color: rgb(131, 229, 229);
 }
 
+.table2 {
+    text-align: center;
+    border-collapse: collapse;
+    width: 200px;
+    background-color: pink;
+}
+
+.btn4 {
+    font-size: medium;
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(131, 229, 229);
+}
+
+.btn5 {
+    font-size: medium;
+    width: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(131, 229, 229);
+}
+
 .pinjam {
     text-align: center;
     border-collapse: collapse;
-    width: 100 %;
-    background-color: pink`;
+    width: 100px;
+    background-color: pink;
 }
 
-.tambah {
+.btn6 {
     text-align: center;
-    border-collapse: collapse;
-    width: 100 %;
-    background-color: pink;
 }

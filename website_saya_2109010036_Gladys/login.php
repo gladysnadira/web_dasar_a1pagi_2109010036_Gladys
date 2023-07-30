@@ -1,3 +1,14 @@
+<?php
+require "controllers/functions.php";
+session_start();
+if (@$_SESSION["login"] == false AND @$_SESSION["username"] == "") {
+    echo "<script>
+    alert('Anda harus login terlebih dahulu!')
+    location = 'index.php'
+    </script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

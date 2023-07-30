@@ -1,6 +1,15 @@
 <?php
 require "controllers/functions.php";
+// error_reporting(0);
+session_start();
+if (@$_SESSION["login"] == false AND @$_SESSION["username"] == "") {
+    echo "<script>
+    alert('Anda harus login terlebih dahulu!')
+    location = 'index.php'
+    </script>";
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +21,9 @@ require "controllers/functions.php";
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body class= tambah>
-    <center>
+<center>
+<body class= table2>
     <h1>Daftar Buku</h1>
-    </center>
     <hr>
     <ul>
         <button>
@@ -42,6 +50,7 @@ require "controllers/functions.php";
             <th>Update</th>
             <th>Opsi</th>
         </tr>
+        </center>
         <?php
         $nomor = 1;
         foreach (buku() as $b) :?>

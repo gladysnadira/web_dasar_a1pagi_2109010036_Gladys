@@ -1,13 +1,21 @@
 <?php
 require "controllers/functions.php";
+session_start();
+if (@$_SESSION["login"] == false AND @$_SESSION["username"] == "") {
+    echo "<script>
+    alert('Anda harus login terlebih dahulu!')
+    location = 'index.php'
+    </script>";
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daftar Buku</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -18,11 +26,11 @@ require "controllers/functions.php";
 </center>
 <hr>
     <ul>
-        <button><a href="login.php">
+        <button class= btn4><a href="login.php">
             Home
         </a>
         </button>
-        <button><a href="buku.php">
+        <button class= btn5><a href="buku.php">
             Data Buku
         </a>
         </button>
@@ -37,6 +45,7 @@ require "controllers/functions.php";
             <th>Judul Buku</th>
             <th>Email</th>
             <th>Tanggal Pinjam</th>
+            <th>Tanggal Pengembalian</th>
         </tr>
         <?php 
         $nomor = 1;
@@ -48,6 +57,7 @@ require "controllers/functions.php";
                 <td><?= $b["judul_buku"]; ?></td>
                 <td><?= $b["email"]; ?></td>
                 <td><?= date("d F Y, H:i");?></td>
+                <td><?= $b["tanggal_pengembalian"]?></td>
             </tr>
         <?php endforeach;
         ?>

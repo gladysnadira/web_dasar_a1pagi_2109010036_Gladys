@@ -56,6 +56,7 @@ require "controllers/functions.php"
                     </script>";
                     session_start();
                     $_SESSION["username"]=$username;
+                    $_SESSION["login"] = true;
                 }else {
                     echo "<script>
                     alert('password tidak sesuai!')

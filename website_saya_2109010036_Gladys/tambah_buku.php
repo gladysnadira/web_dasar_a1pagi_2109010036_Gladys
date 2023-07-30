@@ -1,4 +1,13 @@
-<?php require "controllers/functions.php"; ?>
+<?php 
+require "controllers/functions.php"; 
+session_start();
+if (@$_SESSION["login"] == false AND @$_SESSION["username"] == "") {
+    echo "<script>
+    alert('Anda harus login terlebih dahulu!')
+    location = 'index.php'
+    </script>";
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +25,13 @@
     <h1>Halaman Tambah Buku</h1>
     </center>
     <hr>
+    <center>
     <ul>
         <a href="buku.php">
-            <li>Halaman Buku</li>
+            <button class= btn6 > Halaman Buku </button>
         </a>
         <a href="pinjam.php">
-            <li>Pinjam Buku</li>
+            <button class= btn7> Pinjam Buku </button>
         </a>
     </ul>
     <form action="" method="post">
@@ -69,6 +79,7 @@
             </tr>
         </table>
     </form>
+    </center>
 
 <?php 
 if (isset($_POST["simpan_buku"])) {
@@ -106,7 +117,5 @@ if (isset($_POST["simpan_buku"])) {
 
 }
 ?>
-
-
 </body>
 </html>

@@ -17,14 +17,16 @@ require "controllers/functions.php";
                 <th>Username</th>
                 <td>:</td>
                 <td>
-                    <input type="text" placeholder="Input Username" name="username" value="<?= @$_POST["username"] ?>">
+                    <input type="text" placeholder="Input Username" name="username" value="
+                    <?= @$_POST["username"] ?>">
                 </td>
             </tr>
             <tr>
                 <th>Email</th>
                 <td>:</td>
                 <td>
-                    <input type="email" placeholder="Input Email" name="email" value="<?= @$_POST["email"] ?>">
+                    <input type="email" placeholder="Input Email" name="email" value="
+                    <?= @$_POST["email"] ?>">
                 </td>
             </tr>
             <tr>
